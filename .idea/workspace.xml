@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66905a43-e6cb-4f2d-8c08-3755d213e884" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/mainjava/ParametrizedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mainjava/StringsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mainjava/SumOfTwoTest.java" afterDir="false" />
+    <list default="true" id="66905a43-e6cb-4f2d-8c08-3755d213e884" name="Default" comment="modified">
       <change beforePath="$PROJECT_DIR$/.idea/Lab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Lab.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mainjava/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mainjava/MainPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mainjava/ParametrizedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mainjava/ParametrizedTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,6 +106,7 @@
   </component>
   <component name="ProjectId" id="1RyVatb9gtgOjKSmjeZypkOCgkM" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -140,7 +136,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StringsTest.strings">
+  <component name="RunManager" selected="JUnit.ParametrizedTest.someTest">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -187,7 +183,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParametrizedTest.someTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab" />
       <extension name="coverage">
         <pattern>
@@ -196,8 +192,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mainjava" />
-      <option name="MAIN_CLASS_NAME" value="mainjava.SimpleTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="mainjava.ParametrizedTest" />
+      <option name="METHOD_NAME" value="someTest([Ljava.lang.String;,double)" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -264,11 +261,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ParametrizedTest.someTest" />
         <item itemvalue="JUnit.StringsTest.strings" />
         <item itemvalue="JUnit.ParametrizedTest.parametr" />
         <item itemvalue="JUnit.MainPageTest.mainPageTest" />
         <item itemvalue="JUnit.SimpleTest.test" />
-        <item itemvalue="JUnit.SimpleTest" />
       </list>
     </recent_temporary>
   </component>
