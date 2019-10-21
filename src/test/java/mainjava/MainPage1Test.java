@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class MainPageTest {
+public class MainPage1Test {
 
     private WebDriver driver;
 
@@ -17,13 +17,12 @@ public class MainPageTest {
 
     @Test
     @Tag("smoke")
-    @DisplayName("Main Page Test")
+    @DisplayName("Main Page Test2")
     void mainPageTest() {
         MainPage mainPage = new MainPage(driver);
         mainPage.navigateToMainPage();
 //        mainPage.bestSellers();
         mainPage.searchForItem("Blouse").addToCard();
-        mainPage.makeScreenshot();
     }
 
     @AfterAll

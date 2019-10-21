@@ -1,12 +1,14 @@
 package mainjava;
 
+import io.qameta.allure.Description;
 import main.pages.MainPage;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class MainPageTest {
+@Disabled("причина")
+public class MainPage2Test {
 
     private WebDriver driver;
 
@@ -16,18 +18,22 @@ public class MainPageTest {
     }
 
     @Test
-    @Tag("smoke")
-    @DisplayName("Main Page Test")
+    @DisplayName("My Test")
     void mainPageTest() {
         MainPage mainPage = new MainPage(driver);
         mainPage.navigateToMainPage();
 //        mainPage.bestSellers();
         mainPage.searchForItem("Blouse").addToCard();
-        mainPage.makeScreenshot();
     }
 
+    @Test
+    @DisplayName("Onliner Test")
+    @Description("Вход на сайт")
+    void test1() {
+        driver.get("https://www.onliner.by/");
+    }
     @AfterAll
-    void close(){
+    void close() {
         driver.quit();
     }
 }
