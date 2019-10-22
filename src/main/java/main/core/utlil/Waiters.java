@@ -1,5 +1,6 @@
 package main.core.utlil;
 
+import main.core.driver.SinglePatern;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,20 +16,20 @@ final public class Waiters {
 
     }
 
-    public static WebElement waitUntilElementDisplayed(WebDriver driver, long time, By element) {
-        return new WebDriverWait(driver, time).until(ExpectedConditions.presenceOfElementLocated(element));
+    public static WebElement waitUntilElementDisplayed(long time, By element) {
+        return new WebDriverWait(SinglePatern.getDriver(), time).until(ExpectedConditions.presenceOfElementLocated(element));
     }
 
-    public static WebElement waitUntilElementDisplayed(WebDriver driver, long time, WebElement element) {
-        return new WebDriverWait(driver, time).until(ExpectedConditions.visibilityOf(element));
+    public static WebElement waitUntilElementDisplayed(long time, WebElement element) {
+        return new WebDriverWait(SinglePatern.getDriver(), time).until(ExpectedConditions.visibilityOf(element));
     }
 
-    public static WebElement waitUntilElementDisplayed(WebDriver driver, WebElement element) {
-        return waitUntilElementDisplayed(driver, DEFAULT_TIME, element);
+    public static WebElement waitUntilElementDisplayed(WebElement element) {
+        return waitUntilElementDisplayed(DEFAULT_TIME, element);
     }
 
-    public static WebElement waitUntilElementDisplayed(WebDriver driver, By element) {
-        return waitUntilElementDisplayed(driver, DEFAULT_TIME, element);
+    public static WebElement waitUntilElementDisplayed(By element) {
+        return waitUntilElementDisplayed(DEFAULT_TIME, element);
     }
 
     public static List<WebElement> waitUntilElementsDisplayed(WebDriver driver, long time, By element) {

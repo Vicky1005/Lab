@@ -19,7 +19,7 @@ public class MainPageTest {
     @Tag("smoke")
     @DisplayName("Main Page Test")
     void mainPageTest() {
-        MainPage mainPage = new MainPage(driver);
+        MainPage mainPage = new MainPage();
         mainPage.navigateToMainPage();
 //        mainPage.bestSellers();
         mainPage.searchForItem("Blouse").addToCard();

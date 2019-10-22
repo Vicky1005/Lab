@@ -2,6 +2,7 @@ package main.pages;
 
 import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
+import main.core.driver.SinglePatern;
 import main.core.utlil.Waiters;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
@@ -23,18 +24,18 @@ public class MainPage {
     private List<WebElement> items;
 
 
-    public MainPage(WebDriver driver) {
-        this.driver = driver;
+    public MainPage() {
+        this.driver = SinglePatern.getDriver();
         PageFactory.initElements(driver, this);
     }
 
     public MainPage popular() {
-        Waiters.waitUntilElementDisplayed(driver, popular).click();
+        Waiters.waitUntilElementDisplayed(popular).click();
         return this;
     }
 
     public MainPage bestSellers() {
-        Waiters.waitUntilElementDisplayed(driver, bestSellers).click();
+        Waiters.waitUntilElementDisplayed(bestSellers).click();
         return this;
     }
 
